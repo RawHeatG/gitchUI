@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+.nav {
+    border: 0.2rem solid rgb(9, 61,  70);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.avatar {
+    display: flex;
+}
+
+.avatar, img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.avatar-badge {
+    position: relative;
+}
