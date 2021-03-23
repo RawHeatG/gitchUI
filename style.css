@@ -2,10 +2,16 @@
 
 :root {
     --primary-color: #d81159;
+    --primary-bgcolor: rgba(216, 17, 89, 0.1);
     --shadow-gray: #9CA3AF;
-    --badge-online: #8ac926;
-    --badge-away: #ffca3a;
-    --badge-offline: #ff595e;
+    --green: #8ac926;
+    --gren-bg: rgba(138, 201, 38, 0.1);
+    --yellow: #ffca3a;
+    --yellow-bg: rgba(255, 202, 58, 0.1);
+    --red: #ff595e;
+    --red-bg: rgba(255, 89, 94, 0.1);
+    
+    --primary-radius: 0.2rem;
 }
 
 body {
@@ -28,12 +34,12 @@ body {
 
 .nav-menu {
     display: flex;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     justify-content: space-around;
     list-style-type: none;
 }
 
-.avatar-collection {
+.avatar-container {
     display: flex;
     padding: 1rem;
     justify-content: space-evenly;
@@ -62,11 +68,58 @@ body {
 }
 
 .badge-online{
-    background-color: var(--badge-online);
+    background-color: var(--green);
 }
 .badge-away{
-    background-color: var(--badge-away);
+    background-color: var(--yellow);
 }
 .badge-offline{
-    background-color: var(--badge-offline);
+    background-color: var(--red);
+}
+
+.btn-container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: var(--primary-radius);
+    font-size: 1.5rem;
+    border: none;
+}
+
+.btn:hover {
+    box-shadow: 0.25rem 0.25rem 0.5rem var(--shadow-gray);
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--primary-bgcolor);
+    color: var(--primary-color);
+}
+
+.btn-icon {
+    padding: 0rem 0.5rem;
+    background-color: var(--primary-bgcolor );
+    color: var(--primary-color);
+}
+
+.btn-success {
+    background-color: var(--green);
+    color: white;
+}
+.btn-warning {
+    background-color: var(--yellow);
+    color: white;
+}
+
+.btn-alert {
+    background-color: var(--red);
+    color: white;
 }
