@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 :root {
-    --primary-color: #b5838d;
+    --primary-color: #d81159;
     --shadow-gray: #9CA3AF;
     --badge-online: #8ac926;
     --badge-away: #ffca3a;
@@ -14,9 +14,23 @@ body {
 }
 .nav {
     padding: 0.5rem 1rem;
-    background: linear-gradient(to right, #fe8c00, #f83600); 
+    background-color: var(--primary-color); 
     color: white;
     box-shadow: 0px 0.5rem 0.5rem var(--shadow-gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right {
+    width: 30%;
+    max-width: 300px;
+}
+
+.nav-menu {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 .avatar-collection {
