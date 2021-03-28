@@ -31,7 +31,7 @@ body {
     grid-template-rows: 6rem 1fr;
     grid-template-areas:
         "nav nav nav nav"
-        "main main main sidebar";
+        "sidebar main main main";
     grid-gap: 0.2rem;
 }
 
@@ -44,9 +44,18 @@ body {
     z-index: 998;
 }
 
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap;
+} */
+
+.flex-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.code-block {
+    margin: 1rem;
 }
 
 /* NAVBAR */
@@ -83,8 +92,7 @@ body {
 .sidebar{
     grid-area: sidebar;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 30%;
 }
 
 .sidebar-list {
@@ -113,15 +121,27 @@ body {
 /* AVATAR */
 
 .avatar-container {
-    display: flex;
     padding: 1rem;
-    justify-content: space-evenly;
     max-width: 500px;
 }
 
 .avatar{
     width: 5rem;
     height: 5rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.avatar-small {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.avatar-large {
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     margin: 0.5rem;
 }
