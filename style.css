@@ -333,11 +333,11 @@ body {
     flex-direction: column;
 }
 
-.card-content, .card-horizontal-content button {
+.card-content button {
     font-size: 1rem;
 }
 
-.card-content, .card-horizontal-content h2 {
+.card-heading {
     margin: 0;
 }
 
