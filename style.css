@@ -96,6 +96,14 @@ body {
     font-size: 1.25rem;
 }
 
+.nav-menu a {
+        text-decoration: none;
+        color: white;
+}
+.nav-menu a:hover{
+    font-weight: bold;
+}
+
 /* SIDEBAR */
 
 .sidebar{
