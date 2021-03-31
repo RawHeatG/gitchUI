@@ -24,6 +24,15 @@ body {
     margin: 0;
 }
 
+/* HOME */
+.background{
+    height: 90%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+/* INDEX */
+
 .canvas{
     height: 100vh;
     display: grid;
@@ -95,7 +104,7 @@ body {
     top: 30%;
 }
 
-.sidebar-list {
+.sidebar-menu {
     list-style-type:none;
     font-size: 2rem;
     display: flex;
@@ -104,7 +113,7 @@ body {
     
 }
 
-.sidebar-list a {
+.sidebar-menu a {
     text-decoration: none;
     color: var(--gray);
     margin: 1rem;

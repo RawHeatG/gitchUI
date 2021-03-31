@@ -1,0 +1,43 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    background: url(resources/background.svg)
+}
+
+.logo {
+    padding: 2rem;
+}
+
+.defination {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+
+.defination-word {
+    font-size: 5rem;
+    color: #4B5563;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.defination-pronounciation {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #d81159;
+}
+.defination-meaning {
+    font-size: 2.5rem;
+    color: #4B5563;
+    margin: 1rem 0;
+}
+
+.defination-sub-meaning {
+    font-size: 1.5rem;
+    color: #9CA3AF;
+    margin: 1rem 0;
+}
+
+.defination-example {
+    font-size: 1.5rem;
+    color: #4B5563;
+}
