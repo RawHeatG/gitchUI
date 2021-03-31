@@ -41,3 +41,7 @@ body {
     font-size: 1.5rem;
     color: #4B5563;
 }
+
+a {
+    text-decoration: none;
+}
