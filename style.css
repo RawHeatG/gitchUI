@@ -360,8 +360,6 @@ body {
 .defination {
     margin: 2rem;
     padding: 1rem;
-    border: 0.25rem solid var(--shadow-gray);
-    border-radius: 0.5rem;
     width: max-content;
 }
 
