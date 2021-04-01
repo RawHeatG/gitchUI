@@ -48,6 +48,14 @@ body {
     grid-gap: 0.2rem;
 }
 
+.logo {
+    display: flex;
+}
+
+.logo h1 {
+    margin-bottom: 1.5rem;
+}
+
 .heading {
     font-size: 2.5rem;
     position: sticky;
@@ -106,6 +114,7 @@ body {
 }
 .nav-menu a:hover{
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /* SIDEBAR */
@@ -113,10 +122,12 @@ body {
 .sidebar{
     grid-area: sidebar;
     position: fixed;
-    top: 30%;
+
 }
 
 .sidebar-menu {
+    position: fixed;
+    top: 30%;
     list-style-type:none;
     font-size: 2rem;
     display: flex;
@@ -134,19 +145,47 @@ body {
     color: var(--gray);  
 }
 
-.sidebar-menu a:active {
-    text-decoration: underline;
-    color: var(--dark-gray);
+.sidebar-menu a:hover {
+    color: var(--primary-color);
 }
 
 .parting-line {
     height: 30rem;
     width: 0.25rem;
-    background-color: var(--primary-color);
-    position: absolute;
-    top: -7%;
+    background-color: var(--primary-bgcolor);
+    position: fixed;
+    top: 30%;
     left: 20rem;
     border-radius: 1rem;
+}
+
+.socials-menu {
+    width: 15%;
+    height: 60px;
+    position: fixed;
+    left: 1rem;
+    bottom: 5%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-social{
+    height: 45px;
+    width: 45px;
+}
+
+.icon-social:hover {
+    height: 60px;
+    width: 60px;
+}
+
+.version {
+    color: var(--shadow-gray);
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 2%;
+    left: 7%;
 }
 
 /* CONTAINER */
