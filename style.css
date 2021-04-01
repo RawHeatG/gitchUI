@@ -80,6 +80,16 @@ body {
     margin: 1rem;
 }
 
+/* INSTALLING */
+
+.installing {
+    margin: 2rem;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
 /* NAVBAR */
 
 .nav {
