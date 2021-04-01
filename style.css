@@ -49,6 +49,7 @@ body {
 }
 
 .heading {
+    font-size: 2.5rem;
     position: sticky;
     top: 6rem;
     background: white;
@@ -124,11 +125,13 @@ body {
     
 }
 
+.sidebar-menu li {
+    padding: 0.5rem;
+}
+
 .sidebar-menu a {
     text-decoration: none;
-    color: var(--gray);
-    margin: 1rem;
-    padding: 1rem;
+    color: var(--gray);  
 }
 
 .sidebar-menu a:active {
@@ -426,4 +429,8 @@ body {
     justify-content: space-between;
     width: 70vw;
     z-index: 9999;
+}
+
+.utilities {
+    margin : 2rem;
 }
