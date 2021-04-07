@@ -363,7 +363,7 @@ body {
 }
 
 .card {
-    
+    text-align: left;
     height: 30rem;
     width:20%;  
     display: flex;
