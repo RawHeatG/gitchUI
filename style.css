@@ -501,12 +501,9 @@ body {
     margin: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-.form-wrapper h1 {
-    text-align: center;
-}
 
 .form-wrapper input {
     margin: 0.25rem;
