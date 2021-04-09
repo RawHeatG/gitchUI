@@ -48,6 +48,19 @@ body {
     grid-gap: 0.2rem;
 }
 
+@media screen and (max-width: 500px) {
+    .canvas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem 1fr;
+        grid-template-areas:
+            "nav"
+            "main";
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
 .logo {
     display: flex;
 }
@@ -114,7 +127,7 @@ body {
     display: flex;
     padding: 1rem;
     margin: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     font-size: 1.25rem;
 }
@@ -122,6 +135,10 @@ body {
 .nav-menu a {
         text-decoration: none;
         color: white;
+}
+
+.nav-menu li {
+    margin-right: 1rem;
 }
 .nav-menu a:hover{
     font-weight: bold;
@@ -132,12 +149,11 @@ body {
 
 .sidebar{
     grid-area: sidebar;
-    position: fixed;
-
+    /* position: fixed; */
 }
 
 .sidebar-menu {
-    position: fixed;
+    position: sticky;
     top: 30%;
     list-style-type:none;
     font-size: 2rem;
@@ -370,6 +386,7 @@ body {
     flex-direction: column;
     margin: 1rem;
     position: relative;
+    
 }
 
 .card-horizontal {
@@ -464,6 +481,47 @@ body {
 .defination-example {
     font-size: 1.5rem;
     color: var(--gray);
+}
+
+/* FORM */
+
+.form-container {
+    margin: 2rem;
+}
+
+.form{
+    margin: auto;
+    height: auto;
+    width:20vw;
+    border: 0.25rem solid var(--primary-color);
+    border-radius: var(--primary-radius);
+}
+
+.form-wrapper {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-wrapper h1 {
+    text-align: center;
+}
+
+.form-wrapper input {
+    margin: 0.25rem;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    border: 2px solid var(--primary-bgcolor);
+}
+
+.form-wrapper button {
+    margin: 1rem;
+}
+
+.form-wrapper span {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 /* NAVIGATION */
