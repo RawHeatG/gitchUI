@@ -198,8 +198,9 @@ body {
 }
 
 .icon-social{
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
+    transition: 300ms ease-in-out;
 }
 
 .icon-social:hover {
@@ -223,10 +224,13 @@ body {
     color: var(--gray);
 }
 
+.container {
+    padding: 1rem 2rem;
+}
+
 /* AVATAR */
 
 .avatar-container {
-    padding: 1rem;
     max-width: 500px;
 }
 
@@ -275,11 +279,43 @@ body {
     background-color: var(--red);
 }
 
-/* BUTTON */
+/* ALERTS */
 
-.btn-container {
-    padding: 1rem;
+.alert {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--primary-radius);
+    width: max-content;
+    margin: 0.5rem;
 }
+
+.alert-primary {
+    background-color: var(--primary-bgcolor);
+    color: var(--primary-color);
+}
+
+
+.alert-info {
+    background-color: var(--blue-bg);
+    color: var(--blue);
+}
+
+.alert-success {
+    background-color: var(--green-bg);
+    color: var(--green);
+}
+
+.alert-warning {
+    background-color: var(--yellow-bg);
+    color: var(--yellow);
+}
+
+.alert-error {
+    background-color: var(--red-bg);
+    color: var(--red);
+}
+
+/* BUTTON */
 
 .btn {
     padding: 0.5rem 1rem;
@@ -332,51 +368,7 @@ body {
     color: white;
 }
 
-/* ALERTS */
-
-.alert-container {
-    padding: 1rem;
-}
-
-.alert {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: var(--primary-radius);
-    width: max-content;
-    margin: 0.5rem;
-}
-
-.alert-primary {
-    background-color: var(--primary-bgcolor);
-    color: var(--primary-color);
-}
-
-
-.alert-info {
-    background-color: var(--blue-bg);
-    color: var(--blue);
-}
-
-.alert-success {
-    background-color: var(--green-bg);
-    color: var(--green);
-}
-
-.alert-warning {
-    background-color: var(--yellow-bg);
-    color: var(--yellow);
-}
-
-.alert-error {
-    background-color: var(--red-bg);
-    color: var(--red);
-}
-
 /* CARD */
-
-.card-container {
-    margin: 1rem;
-}
 
 .card {
     text-align: left;
@@ -444,11 +436,6 @@ body {
 
 /* DEFINATION */
 
-.defination {
-    margin: 0 2rem;
-    padding: 1rem;
-}
-
 .defination-border {
     border: 0.5rem dashed var(--shadow-gray);
     padding: 1rem;
@@ -485,10 +472,6 @@ body {
 
 /* FORM */
 
-.form-container {
-    margin: 2rem;
-}
-
 .form{
     margin: auto;
     height: auto;
@@ -523,9 +506,6 @@ body {
 
 /* NAVIGATION */
 
-.navigation {
-    margin: 0 2rem;
-}
 .navbar {
     padding: 0.5rem 0.5rem;
     background-color: var(--primary-color); 
@@ -535,8 +515,4 @@ body {
     justify-content: space-between;
     width: 100%;
     z-index: 9999;
-}
-
-.utilities {
-    margin : 2rem;
 }
