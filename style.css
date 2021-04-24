@@ -154,13 +154,17 @@ body {
 
 .sidebar-menu {
     position: sticky;
-    top: 30%;
+    top: 20%;
+    left: -10%;
     list-style-type:none;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    /* justify-content: center; */
+    align-items: center;
+    padding: 2rem 0;
+
+    border-right: 0.25rem solid var(--primary-bgcolor);
 }
 
 .sidebar-menu li {
@@ -174,16 +178,6 @@ body {
 
 .sidebar-menu a:hover {
     color: var(--primary-color);
-}
-
-.parting-line {
-    height: 30rem;
-    width: 0.25rem;
-    background-color: var(--primary-bgcolor);
-    position: fixed;
-    top: 30%;
-    left: 20rem;
-    border-radius: 1rem;
 }
 
 .socials-menu {
@@ -502,6 +496,17 @@ body {
 .form-wrapper span {
     color: var(--primary-color);
     font-weight: bold;
+}
+
+/* IMAGE */
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.img-rounded {
+    border-radius: 50%;
 }
 
 /* NAVIGATION */
