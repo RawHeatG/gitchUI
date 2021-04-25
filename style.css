@@ -600,7 +600,6 @@ body {
     background-color: var(--primary-bgcolor);
 }
 
-
 /* NAVIGATION */
 
 .navbar {
@@ -612,4 +611,47 @@ body {
     justify-content: space-between;
     width: 100%;
     z-index: 9999;
+}
+
+/* TOAST */
+
+.toast{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 0.25rem solid var(--primary-bgcolor);
+    border-radius: 0.4rem 0 0 0.4rem;
+    width: max-content;
+    visibility: hidden;
+    position: fixed;
+    top: 10rem;
+    right: -25rem;
+    z-index: 999;
+    transition: 500ms cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.toast-active{
+    visibility: visible;
+    right: 5rem;
+}
+
+.toast-success {
+    background-color: var(--green-bg);
+    color: var(--green);
+    border: 0.25rem solid var(--green);
+}
+
+.toast-warning {
+    background-color: var(--yellow-bg);
+    color: var(--yellow);
+    border: 0.25rem solid var(--yellow);
+}
+.toast-error {
+    background-color: var(--red-bg);
+    color: var(--red);
+    border: 0.25rem solid var(--red);
+}
+.toast-info {
+    background-color: var(--blue-bg);
+    color: var(--blue);
+    border: 0.25rem solid var(--blue);
 }
