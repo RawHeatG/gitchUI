@@ -154,7 +154,7 @@ body {
     position: sticky;
     top: 20%;
     list-style-type:none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -189,14 +189,16 @@ body {
 }
 
 .icon-social{
-    height: 35px;
-    width: 35px;
+    height: 2rem;
+    width: 2rem;
     transition: 300ms ease-in-out;
+    opacity: 0.7;
 }
 
 .icon-social:hover {
-    height: 60px;
-    width: 60px;
+    height: 3rem;
+    width: 3rem;
+    opacity: 1;
 }
 
 .version {
@@ -515,9 +517,15 @@ body {
 
 /* LIST */
 
+.list, .list-horizontal {
+    border: .25rem solid var(--primary-color);
+    border-radius: var(--primary-radius);
+    width: max-content;
+    padding: 1rem;
+}
+
 .list li {
     padding: 0.5rem;
-    text-decoration: none;
     color: var(--gray);  
     list-style-type:none;
     font-size: 1.5rem;
