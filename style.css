@@ -95,10 +95,6 @@ body {
 
 /* INSTALLING */
 
-.installing {
-    margin: 2rem;
-}
-
 .primary-color {
     color: var(--primary-color);
 }
@@ -208,7 +204,8 @@ body {
     font-size: 1.5rem;
     position: fixed;
     bottom: 2%;
-    left: 7%;
+    display: flex;
+    align-self: center;
 }
 
 /* CONTAINER */
@@ -514,6 +511,36 @@ body {
 .img-rounded {
     width: 30vw;
     border-radius: 50%;
+}
+
+/* LIST */
+
+.list li {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--gray);  
+    list-style-type:none;
+    font-size: 1.5rem;
+}
+
+.list li:hover {
+    color: var(--primary-color);
+}
+
+.list-horizontal {
+    display: flex;
+}
+
+.list-horizontal li {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--gray);  
+    list-style-type:none;
+    font-size: 1.5rem;
+}
+
+.list-horizontal li:hover {
+    color: var(--primary-color);
 }
 
 /* NAVIGATION */
