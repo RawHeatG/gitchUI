@@ -358,8 +358,13 @@ body {
     color: white;
 }
 
-.btn-alert {
+.btn-error {
     background-color: var(--red);
+    color: white;
+}
+
+.btn-info {
+    background-color: var(--blue);
     color: white;
 }
 
