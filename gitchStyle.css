@@ -16,7 +16,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 6rem 1fr;
+    grid-template-rows: 10vh 1fr;
     grid-template-areas:
         "nav nav nav nav nav"
         "sidebar main main main main";
@@ -109,6 +109,7 @@ body {
 
 .version {
     color: var(--shadow-gray);
+    background-color: white;
     font-size: 1.5rem;
     position: fixed;
     bottom: 2%;
