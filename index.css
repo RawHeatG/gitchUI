@@ -1,0 +1,86 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    background: url(resources/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* width: 100%  */
+}
+
+.logo {
+    margin: 1% 3%;
+    height: 30vh;
+    width: 25vw;
+}
+
+.defination {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+
+.defination-word {
+    font-size: 5rem;
+    color: #4B5563;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.defination-pronounciation {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #d81159;
+}
+.defination-meaning {
+    font-size: 2.5rem;
+    color: #4B5563;
+    margin: 1rem 0;
+}
+
+.defination-sub-meaning {
+    font-size: 1.5rem;
+    color: #9CA3AF;
+    margin: 1rem 0;
+}
+
+.defination-example {
+    font-size: 1.5rem;
+    color: #4B5563;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    :root{
+        font-size: 10px;
+    }
+    body{
+        position: absolute;
+        font-family: 'Mulish', sans-serif;
+        margin: 0;
+        background-image: url(resources/background_mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .logo {
+        margin: 0vh 35vw;
+    }
+
+    .defination {
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    
+}
